@@ -1,0 +1,25 @@
+import random
+
+nome = input("Qual seu nome? ")
+
+todos_caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%&*"
+
+tamanho_senha = 20
+tamanho_nome = len(nome)
+
+letras_aleatorias = tamanho_senha - tamanho_nome
+
+antes = letras_aleatorias // 2
+depois = letras_aleatorias - antes
+
+parte1 = ""
+for i in range(antes):
+    parte1 += random.choice(todos_caracteres)
+
+parte2 = ""
+for i in range():
+    parte2 += random.choice(todos_caracteres)
+
+senha = parte1 + nome + parte2
+
+print("Sua senha é:", senha)
